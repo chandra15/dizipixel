@@ -1,0 +1,165 @@
+@use "../abstract/variables" as *;
+
+.testimonials {
+    // background: #f0f8ff;
+     background:
+            radial-gradient(
+                circle,
+                rgba($secondary-brand-color, .32) 0%,
+                transparent 85%
+            );
+    padding: 4rem 0;
+    overflow: hidden;
+
+    &__slider {
+        overflow: hidden;
+        padding: 2rem;
+    }
+
+    &__intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    &__eyebrow {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: $primary-brand-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        max-width: 250px;
+        color: rgba($brand-text, .75);
+    }
+
+    &__quote-bg {
+        position: absolute;
+        top: -30px;
+        left: -20px;
+
+        font-size: 8rem;
+        color: $primary-brand-color;
+        opacity: .08;
+
+        z-index: -1;
+    }
+
+    &__card {
+        position: relative;
+        padding: 1rem;
+        max-width: 92%;
+    }
+
+    &__card-border {
+        position: absolute;
+
+        top: 12px;
+        left: 12px;
+        right: 0;
+        bottom: 0;
+
+        border: 3px solid $primary-brand-color;
+        border-radius: 1.5rem;
+
+        transform: skewX(-8deg);
+
+        pointer-events: none;
+    }
+
+    &__card-content {
+        position: relative;
+        z-index: 2;
+
+        padding: 2rem;
+
+        background: #fff;
+        border-radius: 1.5rem;
+
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+    }
+
+    &__quote-bg {
+    font-size: 8rem;
+    line-height: 1;
+    color: #373737;
+    opacity: 0.2;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        font-weight: 700;
+        color: #fff;
+
+        background: linear-gradient(120deg, #494949, #111111 );
+    }
+
+    &__name {
+        margin-bottom: .25rem;
+        font-size: 1rem;
+    }
+
+    &__company {
+        color: rgba($brand-text, .65);
+    }
+
+    &__ratings{
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        margin-bottom: 1rem;
+    }
+
+     &__star {
+        color: $accent-color;
+        font-size: 1rem;
+    }
+}
+/* Owl */
+
+
+
+.owl-theme .owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+
+    background: rgba($primary-brand-color, .3);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: $primary-brand-color;
+}

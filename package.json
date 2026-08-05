@@ -1,0 +1,22 @@
+{
+  "name": "dizipixel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass assets/scss/main.scss assets/css/main.css",
+    "watch-css": "sass --watch assets/scss/main.scss:assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "5.3",
+    "jquery": "3.7",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}

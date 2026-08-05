@@ -1,0 +1,210 @@
+@use "../abstract/variables" as *;
+
+.contact {
+    position: relative;
+    z-index: 5;
+    margin-top: -120px;
+    padding-bottom: 8rem;
+
+    &__info-wrapper {
+        margin-bottom: 5rem;
+    }
+
+    &__info-card {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        padding: 1.5rem;
+
+        background: #fff;
+        border-radius: 1rem;
+
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
+
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        color: #fff;
+        font-size: 1.25rem;
+
+        background: linear-gradient( 95deg, $primary-brand-color, $accent-color);
+    }
+
+    &__info-title {
+        margin-bottom: .5rem;
+        font-size: 1.125rem;
+    }
+
+    &__info-text {
+        margin: 0;
+        color: rgba($brand-text, .75);
+    }
+
+    &__content {
+        padding: 4rem;
+
+        background: #fff;
+        border-radius: 2rem;
+
+        box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+    }
+
+    &__intro {
+            padding: 2rem;
+            border-radius: 1.5rem;
+
+            background: linear-gradient(
+                135deg,
+                rgba($primary-brand-color, .05),
+                rgba($secondary-brand-color, .05)
+            );
+        }
+
+    
+    &__eyebrow{
+        color: $primary-brand-color;
+        text-transform: uppercase;
+    }    
+
+
+
+        &__intro-title {
+            margin-bottom: 1rem;
+        }
+
+        &__intro-description {
+            color: rgba($brand-text, .75);
+            line-height: 1.8;
+        }
+
+        &__form {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+     &__features {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        margin-bottom: 1rem;
+        color: rgba($brand-text, .85);
+    }
+
+    &__feature-icon {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        color: #fff;
+        font-size: .875rem;
+
+        background: linear-gradient( 95deg, $primary-brand-color, $accent-color);
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+
+        padding: 1rem 1.25rem;
+
+        border: 1px solid rgba($brand-text, .15);
+        border-radius: 0;
+
+        background: #fff;
+
+        transition: .3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-brand-color;
+            box-shadow: 0 0 0 4px rgba($primary-brand-color, .12);
+        }
+    }
+
+    &__textarea {
+        min-height: 160px;
+        resize: vertical;
+    }
+
+    &__submit {
+        align-self: flex-start;
+    }
+
+
+
+}
+
+/* ----------------------------------
+   Tablet
+----------------------------------- */
+
+@media (max-width: 991.98px) {
+
+    .contact {
+
+        margin-top: -80px;
+
+        &__content {
+            padding: 3rem 2rem;
+        }
+    }
+}
+
+/* ----------------------------------
+   Mobile
+----------------------------------- */
+
+@media (max-width: 767.98px) {
+
+    .contact {
+
+        margin-top: -50px;
+
+        &__content {
+            padding: 2rem 1.5rem;
+            border-radius: 1.5rem;
+        }
+
+        &__info-card {
+            padding: 1.25rem;
+        }
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

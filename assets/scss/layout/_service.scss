@@ -1,0 +1,102 @@
+@use "../abstract/variables" as *;
+
+
+.services-page-hero{
+    position: relative;
+    overflow: hidden;
+
+    background: radial-gradient( circle, rgba($secondary-brand-color, .25) 0%, transparent 70%);
+
+    &__content{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    background: rgba(#dedede, 22%);
+
+    &__title{
+        max-width: 685px;
+        margin: 0 auto;
+    
+    }
+
+    &__description{
+        max-width: 685px;
+        margin: 0 auto;
+    }
+
+
+
+    &__card {
+        position: relative;
+        overflow: hidden;
+
+        border-radius: 20px;
+        height: 395px;
+
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 10px;
+        margin-bottom: 18px;
+        transition: .3s ease;
+
+        &:hover {
+        transform: translateY(-8px);
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: transform .4s ease;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, .85) 0%,
+            rgba(0, 0, 0, .45) 40%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &__content {
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+        padding: 2rem;
+
+        z-index: 2;
+        color: #fff;
+    }
+
+    &__card-title {
+        margin-bottom: .75rem;
+        color: #fff;
+    }
+
+    &__card-description {
+        margin-bottom: 0;
+        color: rgba(255,255,255,.85);
+    }
+
+    &__card:hover &__image {
+        transform: scale(1.05);
+    }
+}

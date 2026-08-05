@@ -1,0 +1,24 @@
+@use "../abstract/variables" as *;
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.reveal {
+    // opacity: 0;
+    transform: translateY(40px);
+    transition: all .8s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// In base/_global.scss or your HTML <head>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap');

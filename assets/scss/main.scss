@@ -1,0 +1,35 @@
+
+@use "abstract/variables" as *;
+
+/***
+Bootstrap5.3
+****/ 
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+@use "base/reset" as *;
+@use "base/global" as *;
+@use "base/typography" as *;
+
+
+/***
+Layouts
+****/ 
+
+@use "layout/header";
+@use "layout/service";
+@use "layout/portfolio";
+@use "layout/working-process";
+@use "layout/testimonials";
+@use "layout/contact";
+@use "layout/footer";
+
+@use "layout/service-pages";
+
+/**
+components
+**/
+@use "components/buttons";
+
+
+
+

@@ -1,0 +1,207 @@
+@use "../abstract/variables" as *;
+
+.service-hero-banner{
+    position: relative;
+    overflow: hidden;
+
+    background: radial-gradient( circle, rgba($secondary-brand-color, .45) 0%, transparent 70%);
+
+     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__description {
+        margin-bottom: 0;
+        max-width: 600px;
+    }
+
+    &__image {
+        text-align: center;
+
+        &-thumbnail {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+.why-choose-us{
+
+    &__heading{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        
+        margin-bottom: 32px;
+        justify-content: space-around;
+        text-align: center;
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.5rem;
+        align-items: center;
+        height: 100%;
+        padding: 18px 22px;
+        background: #fff;
+        border-radius: 1rem;
+
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    }
+
+    &__image {
+        flex-shrink: 0;
+
+        img {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+
+            background: radial-gradient(
+            circle,
+            rgba($secondary-brand-color, .25) 0%,
+            transparent 70%
+        );
+        }
+    }
+
+}
+
+
+
+.website-experience {
+    background: #f2f2f2;
+background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1) 48%, rgb(253, 253, 253) 100%);
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    &__title{ margin-bottom: 32px; }
+
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        margin: 2rem 0 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__benefit {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__benefit-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 34px;
+        height: 34px;
+
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: #faebd7;
+
+        i {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__benefit-text {
+        font-weight: 500;
+    }
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+.recognition{
+    background: #282828;
+
+    &__header{
+
+        max-width: 855px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 42px;
+
+    }
+
+    &__title{ 
+        color: #f0f0f0; 
+        margin-bottom: 28px; 
+    }
+
+    &__desc{ color: #f0f0f0; }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card{
+        background: lighten(#282828, 5%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 22px;
+        text-align: center;
+        gap: 8px;
+        border: 1px solid lighten(#282828, 18%);
+
+    }
+
+    &__card-title{ color: #fff; }
+    &__card-description{ color: #fff; }
+
+    &__icon{
+        width: 68px;
+        height: 68px;
+
+        img {
+        font-size: calc(40px / 2);
+        }
+    }
+
+}
