@@ -12951,6 +12951,24 @@ Layouts
   margin: 0;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer__contact {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__contact li span {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #FDE062;
+}
+.footer__contact li a {
+  color: #f8f9fa;
+}
+.footer__contact li a:hover {
+  color: #FDE062;
+}
 
 .service-hero-banner {
   position: relative;
