@@ -4,7 +4,24 @@
 .portfolio {
     padding: 8rem 0;
     position: relative;
-    background: #282828;
+    overflow: hidden;
+
+    background: url("../images/map.png") center center / cover no-repeat;
+    background-attachment: fixed;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(#282828, 0.88);
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
 
     &__stats {
         display: flex;

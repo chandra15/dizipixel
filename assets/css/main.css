@@ -11940,6 +11940,7 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -12316,7 +12317,20 @@ Layouts
 .portfolio {
   padding: 8rem 0;
   position: relative;
-  background: #282828;
+  overflow: hidden;
+  background: url("../images/map.png") center center/cover no-repeat;
+  background-attachment: fixed;
+}
+.portfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 40, 40, 0.88);
+  z-index: 1;
+}
+.portfolio .container {
+  position: relative;
+  z-index: 2;
 }
 .portfolio__stats {
   display: flex;
