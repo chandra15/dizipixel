@@ -13136,6 +13136,46 @@ Layouts
   font-size: 20px;
 }
 
+.wp-feature {
+  position: relative;
+  overflow: hidden;
+  background: rgba(182, 206, 255, 0.186);
+}
+.wp-feature__content {
+  padding: 0 5rem;
+}
+.wp-feature__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.wp-feature__icon {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(225, 101, 120, 0.08);
+}
+.wp-feature__icon i {
+  font-size: 1.5rem;
+  color: #E16578;
+}
+.wp-feature__body {
+  flex: 1;
+}
+.wp-feature__title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.wp-feature__text {
+  margin: 0;
+  line-height: 1.7;
+}
+
 /**
 components
 **/

@@ -205,3 +205,57 @@ background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1)
     }
 
 }
+
+.wp-feature {
+    position: relative;
+    overflow: hidden;
+    background: rgba(182, 206, 255, 0.186);
+
+    &__content {
+        // max-width: 620px;
+        padding: 0 5rem;
+    }
+
+    
+     &__card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    &__icon {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background: rgba($primary-brand-color, .08);
+
+        i {
+            font-size: 1.5rem;
+            color: $primary-brand-color;
+        }
+    }
+
+    &__body {
+        flex: 1;
+    }
+
+    &__title {
+        margin-bottom: .5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    &__text {
+        margin: 0;
+        line-height: 1.7;
+    }
+    
+
+    
+}
