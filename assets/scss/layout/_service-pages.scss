@@ -259,3 +259,58 @@ background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1)
 
     
 }
+
+.seo-hero-banner{
+    position: relative;
+    overflow: hidden;
+
+    background: radial-gradient( circle, rgba($secondary-brand-color, .45) 0%, transparent 70%);
+
+     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__description {
+        margin-bottom: 0;
+        max-width: 600px;
+    }
+
+    &__image {
+        text-align: center;
+
+        &-thumbnail {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.seo-intro{
+    position: relative;
+    overflow: hidden;
+
+    &__header{
+        max-width: 885px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    &__title{}
+
+    &__description{}
+
+
+}
+

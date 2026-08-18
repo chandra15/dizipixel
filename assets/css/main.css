@@ -13176,6 +13176,45 @@ Layouts
   line-height: 1.7;
 }
 
+.seo-hero-banner {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(108, 207, 246, 0.45) 0%, transparent 70%);
+}
+.seo-hero-banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
+  align-items: flex-start;
+}
+.seo-hero-banner__title {
+  margin-bottom: 0;
+}
+.seo-hero-banner__description {
+  margin-bottom: 0;
+  max-width: 600px;
+}
+.seo-hero-banner__image {
+  text-align: center;
+}
+.seo-hero-banner__image-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.seo-intro {
+  position: relative;
+  overflow: hidden;
+}
+.seo-intro__header {
+  max-width: 885px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 /**
 components
 **/
