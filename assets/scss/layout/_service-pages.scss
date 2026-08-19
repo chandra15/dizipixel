@@ -297,6 +297,7 @@ background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1)
 .seo-intro{
     position: relative;
     overflow: hidden;
+    background: rgba(#cacaca, 15%);
 
     &__header{
         max-width: 885px;
@@ -322,4 +323,5 @@ background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1)
 
 
 }
+
 
