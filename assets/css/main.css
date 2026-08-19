@@ -13214,7 +13214,15 @@ Layouts
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
+.seo-intro__content-box {
+  padding: 0 24px;
+}
+.seo-intro__subtitle {
+  margin-bottom: 18px;
+}
+
 /**
 components
 **/

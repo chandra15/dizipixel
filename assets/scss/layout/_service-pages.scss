@@ -304,12 +304,21 @@ background: radial-gradient(circle,rgb(252, 252, 252) 0%, rgba(242, 242, 242, 1)
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 1.5rem;
 
     }
 
     &__title{}
 
     &__description{}
+
+    // &__content{ background: #dedede;}
+
+    &__content-box{
+        padding: 0 24px;
+    }
+
+    &__subtitle{ margin-bottom: 18px;}
 
 
 }
